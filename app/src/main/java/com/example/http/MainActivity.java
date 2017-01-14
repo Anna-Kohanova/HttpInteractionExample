@@ -12,7 +12,7 @@ import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String API_URL_FOR_GET = "https://api.github.com/users/vogella";
+    private static final String API_URL_FOR_GET = "https://api.github.com/users/anna-kohanova";
     private static final String API_URL_FOR_POST = "http://www.roundsapp.com/post";
 
     private final OkHttpManager mOkHttpManager = new OkHttpManager();
