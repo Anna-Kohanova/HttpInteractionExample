@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HttpExample</string>
+    <string name="post_result">Async post result : </string>
+    <string name="get_result">Async get result : </string>
+</resources>
