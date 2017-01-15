@@ -27,7 +27,7 @@ public class App extends Application {
         mOkHttpClient = new OkHttpClient.Builder().cache(cache).build();
 
         mRetrofit = new Retrofit.Builder()
-                .baseUrl("https://jsonplaceholder.typicode.com")
+                .baseUrl("https://jsonplaceholder.typicode.com/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         sService = mRetrofit.create(JsonPlaceholderService.class);

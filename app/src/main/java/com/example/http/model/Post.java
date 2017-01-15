@@ -18,11 +18,22 @@ public class Post {
     @Expose
     private String body;
 
+    public Post(final int pUserId, final int pId, final String pTitle, final String pBody) {
+        userId = pUserId;
+        id = pId;
+        title = pTitle;
+        body = pBody;
+    }
+
+    public Post() {
+
+    }
+
     public int getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(final int userId) {
         this.userId = userId;
     }
 
@@ -30,7 +41,7 @@ public class Post {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(final int id) {
         this.id = id;
     }
 
@@ -38,7 +49,7 @@ public class Post {
         return title;
     }
 
-    public void setTitle(String title) {
+    public void setTitle(final String title) {
         this.title = title;
     }
 
@@ -46,7 +57,7 @@ public class Post {
         return body;
     }
 
-    public void setBody(String body) {
+    public void setBody(final String body) {
         this.body = body;
     }
 

@@ -2,13 +2,15 @@ package com.example.http.httpmanagers;
 
 import java.util.List;
 
-public interface CRUD<T> {
+public interface CRUD<T1, T2> {
 
-    void add(T t);
+    void add(T1 t);
 
-    T getById();
+    T1 getById(int id);
 
-    List<T> getAll();
+    List<T2> getAllById(int id);
+
+    List<T1> getAll();
 
     void deleteById(int id);
 
